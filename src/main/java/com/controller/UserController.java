@@ -31,8 +31,8 @@ public class UserController {
     }
 
     @RequestMapping("add")
-    public ModelAndView add(String name,Integer age,String pwd) throws Exception {
-        Integer add = demoService.add(name, age, pwd);
+    public ModelAndView add(Users us) throws Exception {
+        Integer add = demoService.add(us);
         if(add>0){
             System.out.println(add.toString());
         }

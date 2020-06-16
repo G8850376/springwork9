@@ -9,6 +9,6 @@ public interface UserMapper {
 
     List<Users> Find(@Param("name") String name, @Param("age") Integer age);
 
-    Integer add(@Param("name") String name, @Param("age") Integer age, @Param("pwd") String pwd);
+    Integer add(Users us);
 
 }

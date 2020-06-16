@@ -16,7 +16,7 @@
         </where>
     </select>
 
-    <insert id="add">
+    <insert id="add" parameterType="com.pojo.Users">
       INSERT INTO users (name,age,pwd) VALUES (#{name},#{age},#{pwd})
     </insert>
 
